@@ -1,22 +1,25 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Saantham</title>
   <meta name="description" content="Reach out and connect with Saantham." />
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body style="background-color: var(--bg-primary);">
 
   <header class="container">
     <nav class="navbar">
-      <a href="index.html" class="nav-brand">Saantham</a>
+      <a href="index.html" class="nav-brand" style="display: flex; align-items: center;"><img
+          src="assets/logo/wordmark-black.png" alt="Saantham" style="height: 72px; width: auto;" /></a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -28,18 +31,84 @@
   </header>
 
   <main>
-    <section class="zone" style="min-height: 70vh; padding-top: var(--space-md);">
-      <div class="container container-narrow" style="text-align: center;">
+    <section class="zone page-header" style="text-align: center; padding-top: var(--space-md);">
+      <div class="container container-narrow">
         <span class="label">Connect</span>
         <h1 style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 2rem;">Reach out to us</h1>
-        <p class="lead" style="margin-bottom: 4rem;">If you are seeking a moment of rest, a supportive conversation, or just a quiet space to be—please reach out.</p>
-        
-        <div style="background-color: #ffffff; padding: 4rem; border-radius: var(--radius-md); border: 1px solid var(--border-soft); text-align: left;">
-          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Email</h3>
-          <p style="margin-bottom: 2rem;"><a href="mailto:hello@saantham.com" class="btn-link">hello@saantham.com &rarr;</a></p>
-          
-          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Location</h3>
-          <p style="font-size: 1.25rem; color: var(--text-dark); margin-bottom: 0;">A gentle space in the heart of the city.</p>
+        <p class="lead" style="margin-bottom: 0;">If you are seeking a moment of rest, a supportive conversation, or
+          just a quiet space to be—please reach out.</p>
+      </div>
+    </section>
+
+    <section class="container" style="padding-bottom: var(--space-xl);">
+      <div class="contact-grid">
+        <!-- LEFT CARD -->
+        <div class="contact-card-soft">
+          <h2>A space for calm, reflection, and gentle support.</h2>
+          <img src="assets/contact.jpg" alt="Calm reflection space"
+            style="max-width: 100%; width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-top: 2rem;" />
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div class="contact-form-card">
+          <form class="contact-form" action="https://formsubmit.co/reach.saantham@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thankyou.html">
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-fill" style="width: 100%; margin-top: 1rem;">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- CONTACT DETAILS CARD -->
+      <div class="contact-details-card">
+        <div class="detail-item">
+          <span class="label">Email</span>
+          <a href="mailto:reach.saantham@gmail.com" class="detail-link">reach.saantham@gmail.com</a>
+        </div>
+        <div class="detail-item">
+          <span class="label">Phone</span>
+          <span>
+            <a href="tel:+916363597501" class="detail-link">+91 6363597501</a><br>
+            <a href="tel:+919591580004" class="detail-link">+91 9591580004</a>
+          </span>
+        </div>
+        <div class="detail-item">
+          <span class="label">WhatsApp</span>
+          <a href="https://wa.me/916363597501" target="_blank" rel="noopener noreferrer" class="detail-link btn-link"
+            style="border:none; padding:0; display:inline-block;">Message on WhatsApp &rarr;</a>
+        </div>
+        <div class="detail-item">
+          <span class="label">Social</span>
+          <div style="display: flex; gap: 1rem; margin-top: 0.25rem;">
+            <a href="#" class="detail-link">Instagram</a>
+            <a href="#" class="detail-link">Facebook</a>
+          </div>
         </div>
       </div>
     </section>
@@ -47,7 +116,8 @@
 
   <footer class="container">
     <div class="footer-left">
-      <a href="index.html" class="nav-brand">Saantham</a>
+      <a href="index.html" class="nav-brand" style="display: flex; align-items: center;"><img
+          src="assets/logo/logo-black.png" alt="Saantham" style="height: 72px; width: auto;" /></a>
       <p style="font-size: 0.95rem;">A gentle space for caregivers.</p>
     </div>
     <div class="footer-right">
@@ -59,4 +129,5 @@
   </footer>
 
 </body>
+
 </html>

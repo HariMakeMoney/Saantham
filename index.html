@@ -16,7 +16,9 @@
 
   <header class="container">
     <nav class="navbar">
-      <a href="index.html" class="nav-brand">Saantham</a>
+      <a href="index.html" class="nav-brand" style="display: flex; align-items: center;">
+        <img src="assets/logo/wordmark-black.png" alt="Saantham" style="height: 72px; width: auto;" />
+      </a>
       <div class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
@@ -29,9 +31,10 @@
 
   <main>
     <!-- HERO SECTION -->
-    <section class="hero-immersive">
+    <section class="hero-immersive" style="position: relative;">
       <div class="hero-mesh"></div>
-      <div class="container hero-content">
+      <img src="assets/logo/logo-cream.png" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 227vh; width: auto; opacity: 0.05; pointer-events: none; z-index: 0;" />
+      <div class="container hero-content" style="position: relative; z-index: 1;">
         <span class="label">Saantham</span>
         <h1>A quiet place<br>to rest and return.</h1>
         <p class="lead" style="max-width: 600px; margin-bottom: 3rem;">A gentle, safe space built to support the quiet hearts of caregivers. Because those who care for others deserve to be held, too.</p>
@@ -67,8 +70,8 @@
         <!-- Highlight Service Full Width -->
         <div class="service-highlight">
           <div>
-            <h3>Gentle Movement & Rest</h3>
-            <p>Slow, accessible yoga practices that focus on breath, ease, and awareness. Designed to help you build flexibility, improve mobility, and reconnect with your body—at your own pace, without expectation or pressure to perform.</p>
+            <h3>Emotional Support and Counselling</h3>
+            <p>A safe, non-judgmental space to talk, reflect, and be heard. Specialised support for stress, profound life transitions, relationships, and emotional well-being.</p>
           </div>
           <div style="background-color: var(--bg-sage); border-radius: var(--radius-md); min-height: 250px; width: 100%;">
             <!-- Visual placeholder space to simulate editorial photography framing -->
@@ -78,20 +81,8 @@
         <!-- Smaller Grid for other services -->
         <div class="services-small-grid">
           <div class="service-space">
-            <span class="label">Support</span>
-            <h3>Emotional Counselling</h3>
-            <p>A safe, non-judgmental space to talk, reflect, and be heard. Specialised support for stress, profound life transitions, relationships, and emotional well-being.</p>
-          </div>
-          
-          <div class="service-space">
-            <span class="label">Transitions</span>
-            <h3>Prenatal & Postnatal Care</h3>
-            <p>Holistic, grounded support for mothers during pregnancy and after childbirth. Includes gentle yoga, emotional care, and compassionate guidance.</p>
-          </div>
-          
-          <div class="service-space">
             <span class="label">Community</span>
-            <h3>Wellbeing Conversations</h3>
+            <h3>Wellbeing Convos</h3>
             <p>Open, guided communal sessions around mental health, self-awareness, and the collective experience of holding responsibility for others.</p>
           </div>
           
@@ -99,6 +90,18 @@
             <span class="label">Environment</span>
             <h3>Reflective Spaces</h3>
             <p>Quiet, intentional environments physically dedicated to pause, rest, and reconnecting with the self.</p>
+          </div>
+          
+          <div class="service-space">
+            <span class="label">Movement</span>
+            <h3>Gentle Movement Yoga</h3>
+            <p>Slow, accessible yoga practices that focus on breath, ease, and awareness. Designed to help you build flexibility, improve mobility, and reconnect with your body—at your own pace, without expectation or pressure to perform.</p>
+          </div>
+          
+          <div class="service-space">
+            <span class="label">Transitions</span>
+            <h3>Prenatal & Postnatal</h3>
+            <p>Holistic, grounded support for mothers during pregnancy and after childbirth. Includes gentle yoga, emotional care, and compassionate guidance.</p>
           </div>
         </div>
       </div>
@@ -132,17 +135,17 @@
   </main>
 
   <!-- REFINED FOOTER -->
-  <footer class="container">
-    <div class="footer-left">
-      <a href="index.html" class="nav-brand">Saantham</a>
-      <p style="font-size: 0.95rem;">A gentle space for caregivers.</p>
-    </div>
-    <div class="footer-right">
+  <footer class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2rem; padding-top: 4rem; padding-bottom: 4rem;">
+    <a href="index.html">
+      <img src="assets/logo/logo-black.png" alt="Saantham" style="height: 90px; width: auto;" />
+    </a>
+    <div style="display: flex; gap: 3rem; margin-top: -1rem;">
       <a href="about.html">About</a>
       <a href="index.html#services">Services</a>
       <a href="blog.html">Journal</a>
       <a href="contact.html">Contact</a>
     </div>
+    <p style="font-size: 0.95rem; color: var(--text-light); margin-top: 1rem;">A gentle space for caregivers.</p>
   </footer>
 
 </body>
