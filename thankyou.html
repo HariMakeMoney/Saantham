@@ -12,13 +12,20 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
-  
+
   <style>
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    
+
     .thank-you-card {
       background-color: #ffffff;
       padding: 5rem 4rem;
@@ -31,7 +38,7 @@
       animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
       opacity: 0;
     }
-    
+
     .thank-you-wrapper {
       min-height: 80vh;
       display: flex;
@@ -41,8 +48,14 @@
     }
 
     @media (max-width: 768px) {
-      .thank-you-card { padding: 3rem 2rem; }
-      .thank-you-wrapper { min-height: 60vh; padding: var(--space-lg) 0; }
+      .thank-you-card {
+        padding: 3rem 2rem;
+      }
+
+      .thank-you-wrapper {
+        min-height: 60vh;
+        padding: var(--space-lg) 0;
+      }
     }
   </style>
 </head>
@@ -66,9 +79,12 @@
   <main>
     <section class="container thank-you-wrapper">
       <div class="thank-you-card">
-        <img src="assets/logo/logo-black.png" alt="Saantham logo" style="height: 60px; width: auto; margin-bottom: 2.5rem; opacity: 0.8;" />
-        <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1;">Thank you for reaching out</h1>
-        <p class="lead" style="margin-bottom: 3.5rem; color: var(--text-light); font-size: 1.25rem;">We’ve received your message and will get back to you shortly.</p>
+        <img src="assets/logo/logo-black.png" alt="Saantham logo"
+          style="height: 60px; width: auto; margin-bottom: 2.5rem; opacity: 0.8;" />
+        <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1;">Thank you for reaching
+          out</h1>
+        <p class="lead" style="margin-bottom: 3.5rem; color: var(--text-light); font-size: 1.25rem;">We’ve received your
+          message and will get back to you shortly.</p>
         <a href="index.html" class="btn btn-fill">Back to Home</a>
       </div>
     </section>
