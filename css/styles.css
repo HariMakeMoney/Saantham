@@ -150,6 +150,25 @@ a:hover { opacity: 0.6; }
 .nav-links { display: flex; gap: 3rem; }
 .nav-links a { font-size: 1rem; color: var(--text-light); transition: color var(--transition-fast); }
 .nav-links a:hover, .nav-links a.active { color: var(--text-dark); }
+.menu-toggle { display: none; }
+
+.cta-global {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 10px;
+}
 
 /* Soft Buttons */
 .btn {
@@ -458,6 +477,17 @@ footer {
   opacity: 0.6;
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 14px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .about-grid, .service-highlight, .contact-grid {
@@ -474,7 +504,17 @@ footer {
     --space-lg: 4rem;
     --space-md: 2.5rem;
   }
-  .nav-links { display: none; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
   .services-small-grid { grid-template-columns: 1fr; }
   .service-highlight { padding: 3rem 2rem; }
   .service-space { padding: 3rem 2rem; }

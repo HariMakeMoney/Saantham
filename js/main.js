@@ -29,6 +29,16 @@
   }
 })();
 
+var menuToggle = document.querySelector(".menu-toggle");
+if (menuToggle) {
+  menuToggle.onclick = function () {
+    var navLinks = document.querySelector(".nav-links");
+    if (navLinks) {
+      navLinks.classList.toggle("active");
+    }
+  };
+}
+
 // =============================
 // Header scroll effect
 // =============================
