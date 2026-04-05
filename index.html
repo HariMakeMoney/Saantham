@@ -25,7 +25,7 @@
       <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
-        <a href="index.html#services">Services</a>
+        <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -33,138 +33,198 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
-    <section class="hero-immersive" style="position: relative;">
-      <div class="hero-mesh"></div>
-      <img src="assets/logo/logo-cream.png" alt=""
-        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 227vh; width: auto; opacity: 0.05; pointer-events: none; z-index: 0;" />
-      <div class="container hero-content" style="position: relative; z-index: 1;">
-        <span class="label">Saantham</span>
-        <h1>Find calm. Start today.</h1>
-        <p class="lead" style="max-width: 600px; margin-bottom: 3rem;">Personalised therapy & guided sessions for stress and anxiety.</p>
-        <a href="/contact.html" class="btn-primary">Book a Consultation</a>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION (EDITORIAL 2-COLUMN) -->
-    <section class="zone">
-      <div class="container about-grid">
-        <div class="col-left">
-          <h2>Saantham</h2>
-          <p class="emotional-statement">"Those who care for others also need a place to rest."</p>
-          <a href="about.html" class="btn-link">Read our story &rarr;</a>
-        </div>
-        <div class="col-right">
-          <p class="lead">Caregiving can be deeply loving — and deeply exhausting.</p>
-          <p>The word “Saantham” reflects calmness, peace, and inner stillness. This space is built on the belief that
-            when caregivers are supported, heard, and nourished, they are able to care for others with greater presence,
-            resilience, and compassion.</p>
-          <p>Whether they are mothers, fathers, partners, healthcare workers, therapists, teachers, or family members
-            supporting loved ones — caregivers often carry deep emotional and physical responsibilities. In the process
-            of giving, they sometimes forget to pause, breathe, and care for themselves.</p>
-          <p style="margin-top: 3rem; font-size: 1.35rem; color: var(--text-dark);">Caregivers deserve care too.</p>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-immersive hero panel" style="position: relative;">
+      <div class="container hero-content" style="margin-top: 40px;">
+        <h1 style="margin-bottom: 40px;">A better headspace starts here.</h1>
+        <p class="lead" style="max-width: 600px; margin-bottom: 48px;">A calm, safe space to slow down, reflect, and
+          reconnect.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn-primary">Start Your Journey</a>
+          <a href="#how-it-works" class="btn-ghost">How It Works</a>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES SECTION (MIXED LAYOUT) -->
-    <section id="services" class="zone zone-tinted">
+    <!-- 2. TRUST STRIP -->
+    <section class="trust-strip panel">
+      <div class="container trust-container">
+        <div class="trust-item">
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-text">Trusted by 10,000+ users</span>
+        </div>
+        <div class="trust-item">
+          <span class="badge">✓ Certified Professionals</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HOW IT WORKS -->
+    <section id="how-it-works" class="zone zone-tinted panel has-watermark">
+      <img src="assets/logo/logo-black.png" class="watermark-logo"
+        style="top: -50px; right: -100px; transform: rotate(15deg);" alt="" aria-hidden="true" />
       <div class="container">
-        <div class="services-header">
-          <span class="label">Our Offerings</span>
-          <h2>A return to stillness.</h2>
+        <div class="section-header center">
+          <span class="label">Process</span>
+          <h2>How It Works</h2>
         </div>
-
-        <!-- Highlight Service Full Width -->
-        <div class="service-highlight">
-          <div>
-            <h3>Emotional Support and Counselling</h3>
-            <p>A safe, non-judgmental space to talk, reflect, and be heard. Specialised support for stress, profound
-              life transitions, relationships, and emotional well-being.</p>
-            <a href="/contact.html" class="btn-secondary">Book a Consultation</a>
+        <div class="step-cards">
+          <div class="step-card">
+            <div class="step-icon">
+              <!-- Using simple SVG icons, like Feather icons -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3>1. Tell us how you feel</h3>
+            <p>Start with a simple, secure assessment so we can understand your specific needs.</p>
           </div>
-          <div
-            style="background-color: var(--bg-sage); border-radius: var(--radius-md); min-height: 250px; width: 100%;">
-            <!-- Visual placeholder space to simulate editorial photography framing -->
+          <div class="step-card">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>2. Get personalized guidance</h3>
+            <p>Match with the right professional and receive a tailored plan for your journey.</p>
           </div>
-        </div>
-
-        <!-- Smaller Grid for other services -->
-        <div class="services-small-grid">
-          <div class="service-space">
-            <span class="label">Community</span>
-            <h3>Wellbeing Conversations</h3>
-            <p>Open, guided communal sessions around mental health, self-awareness, and the collective experience of
-              holding responsibility for others.</p>
-            <a href="/contact.html" class="btn-secondary">Book a Consultation</a>
-          </div>
-
-          <div class="service-space">
-            <span class="label">Environment</span>
-            <h3>Reflective Spaces</h3>
-            <p>Quiet, intentional environments physically dedicated to pause, rest, and reconnecting with the self.</p>
-            <a href="/contact.html" class="btn-secondary">Book a Consultation</a>
-          </div>
-
-          <div class="service-space">
-            <span class="label">Movement</span>
-            <h3>Gentle Movement Yoga</h3>
-            <p>Slow, accessible yoga practices that focus on breath, ease, and awareness. Designed to help you build
-              flexibility, improve mobility, and reconnect with your body—at your own pace, without expectation or
-              pressure to perform.</p>
-            <a href="/contact.html" class="btn-secondary">Book a Consultation</a>
-          </div>
-
-          <div class="service-space">
-            <span class="label">Transitions</span>
-            <h3>Prenatal & Postnatal</h3>
-            <p>Holistic, grounded support for mothers during pregnancy and after childbirth. Includes gentle yoga,
-              emotional care, and compassionate guidance.</p>
-            <a href="/contact.html" class="btn-secondary">Book a Consultation</a>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"></path>
+                <path d="m19 9-5 5-4-4-3 3"></path>
+              </svg>
+            </div>
+            <h3>3. Start improving daily</h3>
+            <p>Track progress, feel better, and build clarity through daily structured care.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BLOG PREVIEW (Unchanged Structure, Mapped to Spacing) -->
-    <section class="container">
-      <div class="blog-preview-section">
-        <span class="label">Journal</span>
-        <h2 style="font-size: clamp(2rem, 4vw, 3rem);">Reflections on caregiving.</h2>
+    <!-- 4. EMOTIONAL SECTION -->
+    <section class="emotional-section panel">
+      <div class="container-narrow text-center">
+        <h2 class="emotional-statement" style="margin: 0; padding: 4rem 0;">"Some days feel heavier than
+          others.<br />We're here for all of them."</h2>
+      </div>
+    </section>
 
-        <article class="blog-card">
-          <span class="label">Reflection</span>
-          <h3>The Caregivers Who Care Quietly</h3>
-          <p>There are people in every family and community who quietly carry the responsibility of caring for others.
-            Somewhere in this constant giving, something quiet happens: the caregiver slowly forgets to pause...</p>
-          <a href="blogs/blog1.html" class="btn-link" style="margin-top: 1.5rem;">Read More &rarr;</a>
-        </article>
+    <!-- 5. BENEFITS -->
+    <section class="zone panel">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Outcomes</span>
+          <h2>Feel the difference.</h2>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">💤</div>
+            <h3>Sleep better</h3>
+            <p>Wake up rested, recover faster, and reclaim your nights with deep, restorative sleep.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🍃</div>
+            <h3>Reduce anxiety</h3>
+            <p>Quiet tracing thoughts and find steady grounding even during stressful days.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🔮</div>
+            <h3>Build clarity</h3>
+            <p>Untangle your mind to make confident decisions with greater focus.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌿</div>
+            <h3>Feel in control</h3>
+            <p>Reclaim agency over your reactions, emotions, and personal well-being.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <a href="blog.html" class="btn-soft btn" style="margin-top: 2rem;">Explore the Journal</a>
+    <!-- 6. TESTIMONIALS -->
+    <section class="zone zone-sage panel has-watermark"
+      style="border-radius: var(--radius-lg); margin-bottom: var(--space-md);">
+      <img src="assets/logo/logo-black.png" class="watermark-logo"
+        style="bottom: -100px; left: -100px; transform: rotate(-25deg);" alt="" aria-hidden="true" />
+      <div class="container">
+        <div class="section-header center">
+          <span class="label">Community</span>
+          <h2>Hear from others.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="quote">"I didn’t realize how overwhelmed I was until I started using Saantham. It’s become a small
+              part of my day that I actually look forward to."</p>
+            <div class="author">
+              <strong>Ananya R.</strong>
+              <span>Student</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">"Life in Bangalore gets hectic, and this gave me a way to slow down without feeling like
+              I’m wasting time. It’s simple, but it works."</p>
+            <div class="author">
+              <strong>Karthik M.</strong>
+              <span>Software Engineer</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">"I’ve tried a lot of things for my anxiety, but this feels different. It’s not trying too
+              hard — it just lets you be."</p>
+            <div class="author">
+              <strong>Neha S.</strong>
+              <span>Teacher</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CTA SECTION -->
-    <section class="cta-global">
-      <h2>Ready to feel better?</h2>
-      <p>Book a consultation and take the first step.</p>
-      <a href="/contact.html" class="btn-primary">Book a Consultation</a>
+    <section class="cta-global panel">
+      <h2>Start feeling better today.</h2>
+      <div class="cta-microcopy">
+        <span>✓ Takes less than 2 minutes</span>
+        <span>✓ No payment</span>
+        <span>✓ No commitment</span>
+      </div>
+      <a href="contact.html" class="btn-primary btn-large" style="margin-top: 1rem;">Book Consultation</a>
     </section>
   </main>
 
   <!-- REFINED FOOTER -->
-  <footer class="container"
-    style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2rem; padding-top: 4rem; padding-bottom: 4rem;">
+  <footer class="container">
     <a href="index.html">
-      <img src="assets/logo/logo-black.png" alt="Saantham" style="height: 90px; width: auto;" />
+      <img src="assets/logo/logo-black.png" alt="Saantham" style="height: 80px; width: auto;" />
     </a>
-    <div style="display: flex; gap: 3rem; margin-top: -1rem;">
+    <nav class="footer-nav">
       <a href="about.html">About</a>
-      <a href="index.html#services">Services</a>
+      <a href="services.html">Services</a>
       <a href="blog.html">Journal</a>
       <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-tagline">A gentle space for caregivers.</p>
+    <div class="footer-divider"></div>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy</a>
+      <span>•</span>
+      <a href="terms.html">Terms</a>
+      <span>•</span>
+      <a href="refund.html">Refunds</a>
+      <span>•</span>
+      <a href="delivery.html">Delivery</a>
+      <span>•</span>
+      <a href="disclaimer.html">Disclaimer</a>
     </div>
-    <p style="font-size: 0.95rem; color: var(--text-light); margin-top: 1rem;">A gentle space for caregivers.</p>
   </footer>
   <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
   <script src="js/main.js"></script>

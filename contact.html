@@ -24,7 +24,7 @@
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="index.html#services">Services</a>
+        <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
@@ -41,67 +41,53 @@
       </div>
     </section>
 
-    <section class="container" style="padding-bottom: var(--space-xl);">
-      <div class="contact-grid">
-        <!-- LEFT CARD -->
-        <div class="contact-card-soft">
-          <h2>A space for calm, reflection, and gentle support.</h2>
-          <img src="assets/contact.jpg" alt="Calm reflection space"
-            style="max-width: 100%; width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-top: 2rem;" />
-        </div>
+    <section class="container container-narrow" style="padding-bottom: var(--space-xl);">
+      <div class="contact-form-card has-watermark" style="margin: 0 auto; position: relative;">
+        <img src="assets/logo/logo-black.png" class="watermark-logo"
+          style="top: -20px; right: -50px; transform: rotate(15deg); width: 250px;" alt="" aria-hidden="true" />
+        <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center;">Send a message</h2>
+        <form class="contact-form" action="https://formsubmit.co/reach.saantham@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://saantham.in/thankyou.html">
 
-        <!-- RIGHT CARD -->
-        <div class="contact-form-card">
-          <form class="contact-form" action="https://formsubmit.co/reach.saantham@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://saantham.in/thankyou.html">
-            <div class="form-group">
-              <label for="name">Name <span class="required">*</span></label>
-              <input type="text" id="name" name="name" required />
-            </div>
+          <div class="form-group">
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-            <div class="form-group">
-              <label for="email">Email <span class="required">*</span></label>
-              <input type="email" id="email" name="email" required />
-            </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" />
-              </div>
-              <div class="form-group">
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age" />
-              </div>
-            </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="required">*</span></label>
+            <input type="text" id="phone" name="phone" required />
+          </div>
 
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5"></textarea>
-            </div>
+          <div class="form-group">
+            <label for="message">How can we support you?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
 
-            <button type="submit" class="btn btn-fill" style="width: 100%; margin-top: 1rem;">Send Message</button>
-          </form>
-        </div>
+          <div class="form-group" style="padding-top: 1rem;">
+            <button type="submit" class="btn-primary btn-large"
+              style="width: 100%; text-align: center; cursor: pointer; border: none;">Send Message</button>
+          </div>
+        </form>
       </div>
 
       <!-- CONTACT DETAILS CARD -->
-      <div class="contact-details-card">
+      <div class="contact-details-card" style="margin-top: 2rem;">
         <div class="detail-item">
           <span class="label">Email</span>
           <a href="mailto:reach.saantham@gmail.com" class="detail-link">reach.saantham@gmail.com</a>
         </div>
         <div class="detail-item">
-          <span class="label">Phone</span>
+          <span class="label">Phone / WhatsApp</span>
           <span>
-            <a href="tel:+916363597501" class="detail-link">+91 6363597501 </a>
+            <a href="tel:+916363597501" class="detail-link">+91 6363597501</a>
           </span>
-        </div>
-        <div class="detail-item">
-          <span class="label">WhatsApp</span>
-          <a href="https://wa.me/916363597501" target="_blank" rel="noopener noreferrer" class="detail-link btn-link"
-            style="border:none; padding:0; display:inline-block;">Message on WhatsApp &rarr;</a>
         </div>
         <div class="detail-item">
           <span class="label">Social</span>
@@ -113,23 +99,38 @@
       </div>
     </section>
   </main>
-  <section class="cta-global">
-    <h2>Ready to feel better?</h2>
-    <p>Book a consultation and take the first step.</p>
-    <a href="/contact.html" class="btn-primary">Book a Consultation</a>
+  <section class="cta-global panel">
+    <h2>Start feeling better today.</h2>
+    <div class="cta-microcopy">
+      <span>✓ Takes less than 2 minutes</span>
+      <span>✓ Private & secure</span>
+      <span>✓ No commitment</span>
+    </div>
+    <a href="contact.html" class="btn-primary btn-large" style="margin-top: 1rem;">Get Started</a>
   </section>
 
   <footer class="container">
-    <div class="footer-left">
-      <a href="index.html" class="nav-brand" style="display: flex; align-items: center;"><img
-          src="assets/logo/logo-black.png" alt="Saantham" style="height: 72px; width: auto;" /></a>
-      <p style="font-size: 0.95rem;">A gentle space for caregivers.</p>
-    </div>
-    <div class="footer-right">
+    <a href="index.html">
+      <img src="assets/logo/logo-black.png" alt="Saantham" style="height: 80px; width: auto;" />
+    </a>
+    <nav class="footer-nav">
       <a href="about.html">About</a>
-      <a href="index.html#services">Services</a>
+      <a href="services.html">Services</a>
       <a href="blog.html">Journal</a>
       <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-tagline">A gentle space for caregivers.</p>
+    <div class="footer-divider"></div>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy</a>
+      <span>•</span>
+      <a href="terms.html">Terms</a>
+      <span>•</span>
+      <a href="refund.html">Refunds</a>
+      <span>•</span>
+      <a href="delivery.html">Delivery</a>
+      <span>•</span>
+      <a href="disclaimer.html">Disclaimer</a>
     </div>
   </footer>
   <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>

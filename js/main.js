@@ -95,3 +95,22 @@ if (menuToggle) {
     console.log("Scroll animation error", e);
   }
 })();
+
+// =============================
+// Scroll Progress Indicator
+// =============================
+(function () {
+  try {
+    var progressBar = document.querySelector(".scroll-progress-bar");
+    if (!progressBar) return;
+
+    window.addEventListener("scroll", function() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      progressBar.style.width = scrolled + "%";
+    });
+  } catch (e) {
+    console.log("Scroll progress error", e);
+  }
+})();
