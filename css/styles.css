@@ -318,6 +318,45 @@ section + section {
   justify-content: center;
 }
 
+/* Hero background image (non-destructive pseudo-element) */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100vh;
+  background: url('../assets/images/herobg.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.65;
+  z-index: 0;
+}
+
+/* Soft brand colour overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 240, 230, 0.45),
+    rgba(230, 245, 240, 0.45)
+  );
+  z-index: 0;
+}
+
+/* Keep all hero children above both overlays */
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+
 .hero-mesh {
   position: absolute;
   top: -50%;
