@@ -183,12 +183,28 @@ a:hover { opacity: 0.6; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 0;
+  padding: 2.5rem 2rem; /* Add padding to prevent edge sticking */
   background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
 }
-.nav-brand { font-size: 1.35rem; font-weight: 500; letter-spacing: -0.02em; }
-.nav-links { display: flex; gap: 3rem; }
-.nav-links a { font-size: 1rem; color: var(--text-light); transition: color var(--transition-fast); }
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+.nav-brand { font-size: 1.35rem; font-weight: 500; letter-spacing: -0.02em; position: relative; z-index: 1; }
+.nav-links { display: flex; gap: 3rem; position: relative; z-index: 1; }
+.nav-links a { font-size: 1rem; color: #1a1a1a; font-weight: 500; transition: color var(--transition-fast); }
 .nav-links a:hover, .nav-links a.active { color: var(--text-dark); }
 .menu-toggle { display: none; }
 
@@ -312,7 +328,8 @@ section + section {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 140px;
+  margin-top: 0;
+  padding-top: 120px;
   padding-bottom: 80px;
   text-align: center;
   justify-content: center;
@@ -322,14 +339,10 @@ section + section {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   background: url('../assets/images/herobg.png') no-repeat center center;
   background-size: cover;
-  opacity: 0.65;
+  opacity: 0.4;
   z-index: 0;
 }
 
@@ -337,11 +350,7 @@ section + section {
 .hero::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   background: linear-gradient(
     to bottom,
     rgba(245, 240, 230, 0.45),
