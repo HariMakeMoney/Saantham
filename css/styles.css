@@ -38,7 +38,7 @@
   --space-xxl: 160px;
 
   --container-width: 1024px;
-  --container-narrow: 640px;
+  --container-narrow: 900px; /* Updated to ~900px as requested */
 
   --radius-sm: 16px;
   --radius-md: 24px;
@@ -201,7 +201,26 @@ a:hover {
 .container-narrow {
   max-width: var(--container-narrow);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 24px; /* Consistent 24px padding */
+}
+
+/* Paragraph constraints for better readability */
+.container-narrow p,
+.container-narrow p.lead,
+.container-narrow .emotional-desc {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container-narrow h1,
+.container-narrow h2,
+.container-narrow h3,
+.container-narrow .label {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* "Zones" for Section Rhythm */
@@ -301,18 +320,18 @@ a:hover {
 
 .cta-global {
   text-align: center;
-  padding: 180px 40px;
+  padding: 120px 24px; /* Balanced vertical and horizontal padding */
   background: radial-gradient(circle at top, var(--bg-sage) 0%, var(--bg-primary) 100%);
   border-radius: var(--radius-lg);
-  margin: 160px auto;
+  margin: 120px auto;
   border: 1px solid var(--border-soft);
-  max-width: var(--container-width);
+  max-width: var(--container-narrow); /* Same 900px max width */
 }
 
 .cta-global h2 {
   font-size: clamp(3rem, 5vw, 4.5rem);
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .cta-global p {
@@ -845,32 +864,49 @@ footer {
   margin-bottom: 2.5rem;
 }
 
-/* Contact Section */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  margin-bottom: 4rem;
-}
-
-.contact-card-soft {
-  background: linear-gradient(135deg, var(--bg-sage) 0%, var(--bg-clay) 100%);
-  border-radius: 20px;
-  padding: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--text-dark);
-}
-
-.contact-form-card {
+.contact-card-layout {
   background-color: #ffffff;
-  border-radius: 20px;
-  padding: 4rem;
+  border-radius: var(--radius-lg);
+  padding: 4rem 24px;
   box-shadow: 0 10px 40px rgba(35, 34, 32, 0.03);
   border: 1px solid var(--border-soft);
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  text-align: left; /* Keep internal text left aligned */
 }
 
+.contact-card-layout h2 {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.contact-details-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-details-col .detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-details-col .detail-link {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.contact-details-col .detail-link:hover {
+  opacity: 0.6;
+}
+
+/* Form Styles */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -919,35 +955,6 @@ footer {
   box-shadow: 0 4px 12px rgba(35, 34, 32, 0.02);
 }
 
-.contact-details-card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 3rem 4rem;
-  box-shadow: 0 10px 40px rgba(35, 34, 32, 0.03);
-  border: 1px solid var(--border-soft);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  align-items: start;
-}
-
-.contact-details-card .detail-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.contact-details-card .detail-link {
-  font-size: 1.1rem;
-  color: var(--text-dark);
-  text-decoration: none;
-  transition: opacity var(--transition-fast);
-}
-
-.contact-details-card .detail-link:hover {
-  opacity: 0.6;
-}
-
 .whatsapp-float {
   position: fixed;
   bottom: 24px;
@@ -967,12 +974,14 @@ footer {
 .service-detail-card {
   background: #fff;
   border-radius: var(--radius-lg);
-  padding: 4rem;
-  margin-bottom: var(--space-md);
+  padding: 4rem 24px;
+  margin: 0 auto var(--space-md) auto;
+  max-width: var(--container-narrow);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
   border: 1px solid var(--border-soft);
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centered relative to container */
   transition: transform var(--transition-slow), box-shadow var(--transition-slow);
 }
 
@@ -983,24 +992,28 @@ footer {
 
 .service-detail-card h2 {
   font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 1rem;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .service-detail-card .emotional-desc {
   font-size: 1.25rem;
   color: var(--text-light);
-  margin-bottom: 24px;
-  max-width: 560px;
+  margin: 0 auto 32px auto;
+  max-width: 650px;
   line-height: 1.6;
+  text-align: center;
 }
 
 .service-detail-card .benefits-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 0 0 48px 0;
-  /* Increased distance to CTA */
+  gap: 16px;
+  margin: 0 auto 48px auto;
   list-style: none;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
 }
 
 .service-detail-card .benefits-list li {
@@ -1139,6 +1152,12 @@ footer {
   .trust-container {
     gap: 1.5rem;
     flex-direction: column;
+  }
+
+  .contact-card-layout {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.5rem;
+    gap: 2.5rem;
   }
 
   .cta-microcopy {
