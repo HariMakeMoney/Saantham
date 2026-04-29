@@ -47,7 +47,7 @@ if (menuToggle) {
     var header = document.getElementById("main-header");
     if (!header) return;
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       if (window.scrollY > 50) {
         header.classList.add("scrolled");
       } else {
@@ -55,7 +55,7 @@ if (menuToggle) {
       }
     });
 
-  } catch(e) {
+  } catch (e) {
     console.log("Header scroll error", e);
   }
 })();
@@ -83,7 +83,7 @@ if (menuToggle) {
           // observer.unobserve(entries[i].target);
         }
       }
-    }, { 
+    }, {
       threshold: 0.1,
       rootMargin: "0px 0px -50px 0px"
     });
@@ -104,7 +104,7 @@ if (menuToggle) {
     var progressBar = document.querySelector(".scroll-progress-bar");
     if (!progressBar) return;
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;

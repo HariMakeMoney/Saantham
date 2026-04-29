@@ -41,59 +41,66 @@
       </div>
     </section>
 
-    <section class="container container-narrow" style="padding-bottom: var(--space-xl);">
-      <div class="contact-form-card has-watermark" style="margin: 0 auto; position: relative;">
+    <section class="contact-section-wrapper" style="padding-bottom: var(--space-xl);">
+      <div class="contact-grid-2col has-watermark" style="position: relative;">
         <img src="assets/logo/logo-black.png" class="watermark-logo"
           style="top: -20px; right: -50px; transform: rotate(15deg); width: 250px;" alt="" aria-hidden="true" />
-        <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center;">Send a message</h2>
-        <form class="contact-form" action="https://formsubmit.co/reach.saantham@gmail.com" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://saantham.in/thankyou.html">
 
-          <div class="form-group">
-            <label for="name">Name <span class="required">*</span></label>
-            <input type="text" id="name" name="name" required />
-          </div>
+        <!-- Left Card -->
+        <div class="contact-card">
+          <h2>Send a message</h2>
+          <form class="contact-form" action="https://formsubmit.co/reach.saantham@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://saantham.in/thankyou.html">
 
-          <div class="form-group">
-            <label for="email">Email <span class="required">*</span></label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required />
+            </div>
 
-          <div class="form-group">
-            <label for="phone">Phone <span class="required">*</span></label>
-            <input type="text" id="phone" name="phone" required />
-          </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <div class="form-group">
-            <label for="message">How can we support you?</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-          </div>
+            <div class="form-group">
+              <label for="phone">Phone <span class="required">*</span></label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
 
-          <div class="form-group" style="padding-top: 1rem;">
-            <button type="submit" class="btn-primary btn-large"
-              style="width: 100%; text-align: center; cursor: pointer; border: none;">Send Message</button>
-          </div>
-        </form>
-      </div>
+            <div class="form-group">
+              <label for="message">How can we support you?</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
 
-      <!-- CONTACT DETAILS CARD -->
-      <div class="contact-details-card" style="margin-top: 2rem;">
-        <div class="detail-item">
-          <span class="label">Email</span>
-          <a href="mailto:reach.saantham@gmail.com" class="detail-link">reach.saantham@gmail.com</a>
+            <div class="form-group" style="padding-top: 1rem;">
+              <button type="submit" class="btn-primary btn-large"
+                style="width: 100%; text-align: center; cursor: pointer; border: none;">Send Message</button>
+            </div>
+          </form>
         </div>
-        <div class="detail-item">
-          <span class="label">Phone / WhatsApp</span>
-          <span>
-            <a href="tel:+916363597501" class="detail-link">+91 6363597501</a>
-          </span>
-        </div>
-        <div class="detail-item">
-          <span class="label">Social</span>
-          <div style="display: flex; gap: 1rem; margin-top: 0.25rem;">
-            <a href="#" class="detail-link">Instagram</a>
-            <a href="#" class="detail-link">Facebook</a>
+
+        <!-- Right Card -->
+        <div class="contact-card">
+          <h2>Contact Details</h2>
+          <div class="contact-details-list">
+            <div class="detail-item">
+              <span class="label">Email</span>
+              <a href="mailto:reach.saantham@gmail.com" class="detail-link">reach.saantham@gmail.com</a>
+            </div>
+            <div class="detail-item">
+              <span class="label">Phone / WhatsApp</span>
+              <span>
+                <a href="tel:+916363597501" class="detail-link">+91 6363597501</a>
+              </span>
+            </div>
+            <div class="detail-item">
+              <span class="label">Social</span>
+              <div style="display: flex; gap: 1rem; margin-top: 0.25rem;">
+                <a href="#" class="detail-link">Instagram</a>
+                <a href="#" class="detail-link">Facebook</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,7 +123,7 @@
     <nav class="footer-nav">
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="blog.html">Journal</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
     <p class="footer-tagline">A gentle space for caregivers.</p>
@@ -133,7 +140,7 @@
       <a href="disclaimer.html">Disclaimer</a>
     </div>
   </footer>
-  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+  <a href="https://wa.me/916363597501" class="whatsapp-float" target="_blank">💬</a>
   <script src="js/main.js"></script>
 
 </body>

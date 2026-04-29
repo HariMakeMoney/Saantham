@@ -864,45 +864,64 @@ footer {
   margin-bottom: 2.5rem;
 }
 
-.contact-card-layout {
-  background-color: #ffffff;
-  border-radius: var(--radius-lg);
-  padding: 4rem 24px;
-  box-shadow: 0 10px 40px rgba(35, 34, 32, 0.03);
-  border: 1px solid var(--border-soft);
-  max-width: var(--container-narrow);
+.contact-section-wrapper {
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 24px;
+}
+
+.contact-grid-2col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  text-align: left; /* Keep internal text left aligned */
+  gap: 32px;
+  align-items: start;
 }
 
-.contact-card-layout h2 {
+.contact-card {
+  background-color: var(--bg-sage);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border-soft);
   text-align: left;
-  margin-bottom: 24px;
 }
 
-.contact-details-col {
+.contact-card h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.contact-details-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 32px;
 }
 
-.contact-details-col .detail-item {
+.contact-details-list .detail-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 16px;
 }
 
-.contact-details-col .detail-link {
+.contact-details-list .label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-accent);
+  margin-bottom: 0;
+}
+
+.contact-details-list .detail-link {
   font-size: 1.1rem;
-  color: var(--text-dark);
+  color: var(--text-light);
   text-decoration: none;
   transition: opacity var(--transition-fast);
 }
 
-.contact-details-col .detail-link:hover {
+.contact-details-list .detail-link:hover {
   opacity: 0.6;
 }
 
@@ -1154,10 +1173,13 @@ footer {
     flex-direction: column;
   }
 
-  .contact-card-layout {
+  .contact-grid-2col {
     grid-template-columns: 1fr;
-    padding: 2.5rem 1.5rem;
-    gap: 2.5rem;
+    gap: 24px;
+  }
+
+  .contact-card {
+    padding: 32px 24px;
   }
 
   .cta-microcopy {
